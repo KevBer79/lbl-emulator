@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LBL Viewer - Markem-Imaje</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #f8f8f8; }
+        canvas { border: 1px solid #ccc; margin-top: 20px; }
+        #output { white-space: pre-wrap; background: #eee; padding: 10px; border: 1px solid #ccc; margin-top: 10px; max-height: 200px; overflow: auto; }
+    </style>
+</head>
+<body>
+    <h1>LBL Viewer - Markem-Imaje 2200</h1>
+    <input type="file" id="fileInput" accept=".lbl">
+    <div id="output">Drop an .LBL file above to parse...</div>
+    <canvas id="preview" width="600" height="400"></canvas>
+
+    <script src="parser.js"></script>
+</body>
+</html>
